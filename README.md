@@ -7,7 +7,7 @@ streamflow is important for managing extreme events and reservoirs. Several appr
 exponential smoothing method, Auto Regressive Integrated Moving Average (ARIMA) model and machine learning tools. This code is to use an 
 exponential smoothing model for streamflow forcasting using past streamflow timeseries.
 
-## Processes of the program
+## Description
 1. Download USGS streamflow data
   * Imported hydrofunctions are used to build the NWIS url to download the dataset. Here instantaneous data for USGS 03335500 WABASH RIVER
  AT LAFAYETTE, IN for a period of 5 months from 01/01/2019 to 05/31/2019 is downloaded.
