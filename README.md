@@ -15,8 +15,7 @@ exponential smoothing model for streamflow forcasting using past streamflow time
 * Plot streamflow data
   * Plotting streamflow timeseries for preliminary visualization and checking if there is any missing value.
 * Building a first order exponential smoothing model
-  * The formula used in this model: $y_{t}=\alpha y_{t-1}+(1-\alpha)y_{t-1}$
-  * ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+  * The formula used in this model: <img src="https://render.githubusercontent.com/render/math?math=y_{t}=\alpha y_{t-1}+(1-\alpha)y_{t-1}">
 * Plotting ouput from first order model
 * Making predictions from first order model
 * Defining function to return the error of predictions
