@@ -8,14 +8,17 @@ exponential smoothing method, Auto Regressive Integrated Moving Average (ARIMA) 
 exponential smoothing model for streamflow forcasting using past streamflow timeseries.
 
 ## Processes of the program
-* Download USGS streamflow data
+1. Download USGS streamflow data
   * Imported hydrofunctions are used to build the NWIS url to download the dataset. Here instantaneous data for USGS 03335500 WABASH RIVER
  AT LAFAYETTE, IN for a period of 5 months from 01/01/2019 to 05/31/2019 is downloaded.
   * Then the dataframe is resampled into a timeseries of daily mean streamflow.
-* Plot streamflow data
+2. Plot streamflow data
   * Plotting streamflow timeseries for preliminary visualization and checking if there is any missing value.
-* Building a first order exponential smoothing model
+3. Building a first order exponential smoothing model
   * The formula used in this model: <img src="https://render.githubusercontent.com/render/math?math=y_{t}=\alpha y_{t-1}+(1-\alpha)y_{t-1}">
-* Plotting ouput from first order model
-* Making predictions from first order model
-* Defining function to return the error of predictions
+4. Plotting ouput from first order model
+  * Call the function of the model made in the above step and plot the model output ( using first order smoothing with <img src="https://render.githubusercontent.com/render/math?math=\alpha=1">) along with the observation dataset
+5. Making predictions from first order model
+  * The model is used to make predictions for extra days. Using this model as Exp_Smoothing_Prediction.
+6. Defining function to return the error of predictions
+  * The function: mean_square_error is used to output the error of predictions
